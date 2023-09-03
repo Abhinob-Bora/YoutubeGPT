@@ -1,1 +1,9 @@
-apikey ='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'
+from dotenv import load_dotenv
+import os 
+
+# Load environment variables from the .env file
+load_dotenv()
+
+# Access the APIKEY variable
+apikey = os.getenv("APIKEY")
+
